@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+    <span class="brand-tag">{{ page.brand }}</span>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">Published: {{ page.date | date: "%B %d, %Y" }} | Category: {{ page.category }}</p>
+    {{ content }}
+</article>
