@@ -1,66 +1,76 @@
----
-layout: default
-title: Home
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ site.url }}">
+    <title>Luxury Bag Insider - Authentication, Comparison & Industry Guides</title>
+    <meta name="description" content="Expert guides on luxury designer bags - authentication, comparison, and industry insights. Learn how to authenticate Hermès, Chanel, Louis Vuitton, Dior and more.">
+    <link rel="canonical" href="https://kakaciro.github.io">
 </head>
 <body>
     <header>
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
+        <nav>
+            <a href="/">Luxury Bag Insider</a>
+            <a href="/about.html">About</a>
+        </nav>
     </header>
 
     <main>
+        <section class="hero">
+            <h1>Luxury Bag Insider</h1>
+            <p>Expert guides on luxury designer bags - authentication, comparison, and industry insights</p>
+        </section>
+
         <section class="posts">
             <h2>Latest Articles</h2>
             <ul>
-                {% for post in site.posts limit:10 %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <span class="brand-tag">{{ post.brand }}</span>
-                </li>
-                {% endfor %}
+                <li><a href="/posts/2026-04-04-hermes-birkin-30-authentication-guide-2026.html">Hermès Birkin 30 Authentication Guide 2026</a> <span class="date">2026-04-04</span> <span class="brand-tag">Hermès</span></li>
+                <li><a href="/posts/2026-04-04-chanel-classic-flap-1v1-vs-authentic-comparison.html">Chanel Classic Flap Medium: 1:1 Quality vs Authentic Comparison</a> <span class="date">2026-04-04</span> <span class="brand-tag">Chanel</span></li>
+                <li><a href="/posts/2026-04-04-louis-vuitton-neverfull-2026-update.html">Louis Vuitton Neverfull MM: 2026 Market Analysis & Alternatives</a> <span class="date">2026-04-04</span> <span class="brand-tag">Louis Vuitton</span></li>
+                <li><a href="/posts/2026-04-04-hermes-constance-vs-kelly-comparison.html">Hermès Constance vs Kelly: Which H-Bag is Right for You?</a> <span class="date">2026-04-04</span> <span class="brand-tag">Hermès</span></li>
+                <li><a href="/posts/2026-04-04-luxury-bag-sourcing-secrets-factory-direct.html">Luxury Bag Sourcing: How Factory-Direct Works in 2026</a> <span class="date">2026-04-04</span> <span class="brand-tag">General</span></li>
+                <li><a href="/posts/2026-04-04-dior-book-tote-authentication-guide.html">Dior Book Tote Authentication: 2026 Expert Guide</a> <span class="date">2026-04-04</span> <span class="brand-tag">Dior</span></li>
+                <li><a href="/posts/2026-04-04-rolex-cleaning-movement-fakes-2026.html">The Luxury Watch & Bag Connection: Why Watch Buyers Also Buy Bags</a> <span class="date">2026-04-04</span> <span class="brand-tag">General</span></li>
+                <li><a href="/posts/2026-04-04-hermes-mini-kelly-2-2026-hunting-guide.html">Hermès Mini Kelly II: 2026 Market Update</a> <span class="date">2026-04-04</span> <span class="brand-tag">Hermès</span></li>
+                <li><a href="/posts/2026-04-04-luxury-bag-care-storage-guide-2026.html">Luxury Bag Care Guide: Store and Maintain Your Investment</a> <span class="date">2026-04-04</span> <span class="brand-tag">General</span></li>
+                <li><a href="/posts/2026-04-04-cartier-love-bag-accessory-pairing-guide.html">Cartier Love Collection: Bags and Accessories Pairing Guide</a> <span class="date">2026-04-04</span> <span class="brand-tag">Cartier</span></li>
             </ul>
         </section>
 
         <section class="categories">
             <h2>Categories</h2>
             <ul>
-                <li><a href="/category/authentication/">Authentication Guides</a></li>
-                <li><a href="/category/comparison/">1:1 Comparison</a></li>
-                <li><a href="/category/industry/">Industry Insights</a></li>
-                <li><a href="/category/sourcing/">Sourcing Secrets</a></li>
+                <li><a href="/category/authentication.html">Authentication Guides</a></li>
+                <li><a href="/category/comparison.html">1:1 Comparison</a></li>
+                <li><a href="/category/industry.html">Industry Insights</a></li>
+                <li><a href="/category/sourcing.html">Sourcing Secrets</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 {{ site.title }}. All rights reserved.</p>
+        <p>&copy; 2026 Luxury Bag Insider. All rights reserved.</p>
         <p><a href="https://womanlvbag.com">Visit womanlvbag.com</a></p>
     </footer>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #eee; }
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background: #fafafa; }
+        header { background: #1a1a1a; color: #fff; padding: 20px 0; margin-bottom: 40px; }
+        nav { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        .hero { text-align: center; padding: 40px 0; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: #1a1a1a; }
         h2 { font-size: 1.5em; margin: 30px 0 15px; color: #1a1a1a; }
+        p { margin-bottom: 15px; }
         ul { list-style: none; }
-        li { padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+        li { padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
         a { color: #0066cc; text-decoration: none; font-size: 1.1em; }
         a:hover { text-decoration: underline; }
         .date { color: #999; font-size: 0.9em; margin-left: 10px; }
-        .brand-tag { background: #f0f0f0; padding: 2px 8px; border-radius: 3px; font-size: 0.8em; margin-left: 10px; }
-        .categories li { display: inline-block; margin-right: 20px; }
+        .brand-tag { background: #0066cc; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 10px; }
+        .categories li { display: inline-block; margin-right: 20px; border-bottom: none; }
         footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #666; }
         footer a { color: #0066cc; }
     </style>
