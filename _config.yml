@@ -1,0 +1,21 @@
+title: Luxury Bag Insider
+email: contact@womanlvbag.com
+description: Expert guides on luxury designer bags - authentication, comparison, and industry insights
+baseurl: ""
+url: "https://kakaciro.github.io"
+github:
+  repo: ""
+  branch: master
+
+permalink: /posts/:title.html
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name.html
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
